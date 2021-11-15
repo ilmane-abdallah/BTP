@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="btp.css">
+    <title>Contacter Nous!</title>
+</head>
+<body>
+
+    <h1>Le Formulaire:</h1>
+        <p>Voici un formulaire de contact.</br>
+            Pour plus d'information,n'hésitez pas a nous contacter.
+        </p>
+
+        <form method="post" action="traitement.php">
+
+        
+            <fieldset>
+                <legend>Vos Coordonnées</legend>
+                
+            <label for="votre-nom" >Votre nom</label>
+            <input type="text" id="votre-nom" placeholder="votre-nom"/></br>
+
+            <label for="prénom">Votre prénom</label>
+            <input type="text" id="prénom" placeholder="prénom"/></br>
+
+            <label for="Adresse">Votre adresse</label>
+            <input type="text" id="Adresse" placeholder="Adresse"></br>
+
+            <label for="number">Votre numéro</label>
+            <input type="tel" id="number" placeholder="06xxxxxxxx"></br>
+        </fieldset>
+            <p>
+                <label for="choix">Que recherchez-vous?</label></br>
+                <select name="choix" id="choix">
+
+                        <option value="recherche d'emploie">Recherches-d'emploies</option>
+                        <option value="demande de stage">Demandes-de-Stages</option>
+                        <option value="Periode d'essaie">Périodes-d'essaies</option>
+                        <option value="Autre possibilité">Autres-possibilitées</option>
+                </select>
+
+            </p>
+          
+
+            <p>Si vous avez d'autres questions à poser,c'est ici:</p>
+            <br>
+            <textarea name="autres-questions" id="autres-questions" cols="70" rows="7"></textarea></br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+    
+    
+</body>
+</html>
